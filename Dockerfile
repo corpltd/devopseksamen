@@ -5,7 +5,7 @@ FROM golang:1.20 as builder
 WORKDIR /app
 
 # Copy the local package files to the container's workspace
-COPY ../PGR301-konte-2024-main .
+COPY ../devopseksamen-main .
 
 # Build the Go app
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .

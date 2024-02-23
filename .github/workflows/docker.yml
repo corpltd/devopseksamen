@@ -1,0 +1,14 @@
+name: Docker CI
+
+on: [push]
+
+jobs:
+  build:
+    run-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Docker Build
+        run: docker build . -t nbx
