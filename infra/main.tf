@@ -21,6 +21,17 @@ variable "docker_username" {
   sensitive   = true
 }
 
+variable "docker_password" {
+  description = "Dockerhub password"
+  type        = string
+  sensitive   = true
+}
+
+provider "dockerhub" {
+    username = var.docker_username
+    password = var.docker_password
+}
+
 resource "dockerhub_repository" "project" {
   name        = var.docker_repo
   namespace   = var.docker_username
