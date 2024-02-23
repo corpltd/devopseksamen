@@ -1,1 +1,1 @@
-![Docker Workflow Status](https://img.shields.io/github/actions/workflow/status/corpltd/devopseksamen/docker.yml?branch=main)
+[![Docker CI](https://github.com/corpltd/devopseksamen/actions/workflows/docker.yml/badge.svg)](https://github.com/corpltd/devopseksamen/actions/workflows/docker.yml)
