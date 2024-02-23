@@ -1,0 +1,14 @@
+name: Github Actions Workflow Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Response
+      run: echo "Github Actions works"
