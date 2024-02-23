@@ -21,7 +21,7 @@
 Her kan du legge inn alt du måtte trenge fra workflows
 
 
-![Bilde 3](bilder/3.png)
+![Bilde 4](bilder/4.png)
 
 
 ## Oppgave 1 - C
