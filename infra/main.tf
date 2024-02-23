@@ -3,7 +3,7 @@ terraform {
 }
 
 variable "docker_repo" {
-  description = "Dockerhub username"
+  description = "Dockerhub repository"
   type        = string
   sensitive   = true
 }
