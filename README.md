@@ -29,7 +29,7 @@ Her kan du legge inn alt du måtte trenge fra workflows
 Fordelen med å ha minst to som godkjenner endringer mot main branch er mer enn ett sikkerhetsledd. Da er sjansen mye lavere for menneskelige feil som å overse noe, godkjenne med et uhell og at noen er utslitte og ikke tenker helt klart. Det er noe jeg selv har erfart i gruppearbeid. Det gir også en økt trygghetsfølelse i situasjoner der kanskje noen i en gruppe ikke vet helt hva de driver med til tider.
 
 
-En ulempe med at to personer må godkjenne er at arbeidsflyten vil bli tregere og det kan føles som "micromanagament" til tider. Men da må man minne seg på at dette sikkerhetsleddet gjør et prosjekt mye mer effektivt og trygt i lengden.
+En ulempe med at to personer må godkjenne er at arbeidsflyten vil bli tregere og det kan føles som "micromanagement" til tider. Men da må man minne seg på at dette sikkerhetsleddet gjør et prosjekt mye mer effektivt og trygt i lengden.
 
 ## Oppgave 2 - B ##
 
