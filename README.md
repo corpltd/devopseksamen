@@ -31,7 +31,7 @@ Fordelen med å ha minst to som godkjenner endringer mot main branch er mer enn 
 
 En ulempe med at to personer må godkjenne er at arbeidsflyten vil bli tregere og det kan føles som "micromanagament" til tider. Men da må man minne seg på at dette sikkerhetsleddet gjør et prosjekt mye mer effektivt og trygt i lengden.
 
-## Oppgave 2 -B ##
+## Oppgave 2 - B ##
 
 **1. Naviger til infra-directory & skriv "terraform init"**
 
@@ -61,3 +61,21 @@ En ulempe med at to personer må godkjenne er at arbeidsflyten vil bli tregere o
 
 
 ![2b-bilde5](bilder/5-2b.png)
+
+## Oppgave 2 - C
+
+**1. Når jeg kjører "terraform apply" igjen får jeg denne meldingen**
+
+![2c-bilde1](bilder/1-2c.png)
+
+
+Det er fordi repoet allerede eksisterer på Docker hub. Her er hvordan man kan fikse dette:
+
+**2. På hub.docker.com/repositories kan du slette repoet i innstillinger**
+
+![2c-bilde2](bilder/2-2c.png)
+
+
+**3. Når repoet er slettet kan du kjøre "terraform apply" og det vil virke denne gangen**
+
+![3c-bilde3](bilder/3-2c.png)
