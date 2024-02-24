@@ -33,6 +33,8 @@ En ulempe med at to personer må godkjenne er at arbeidsflyten vil bli tregere o
 
 ## Oppgave 2 - B ##
 
+(Var usikker på om dette skal være anonymt eller ikke, så fjernet navn i tilfelle)
+
 **1. Naviger til infra-directory & skriv "terraform init"**
 
 
