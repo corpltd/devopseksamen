@@ -80,4 +80,41 @@ Det er fordi repoet allerede eksisterer på Docker hub. Her er hvordan man kan f
 
 **3. Når repoet er slettet kan du kjøre "terraform apply" og det vil virke denne gangen**
 
-![3c-bilde3](bilder/3-2c.png)
+![2c-bilde3](bilder/3-2c.png)
+
+## Oppgave 3
+
+Workflowen Docker-CI / docker.yml bruker Repository Secrets for å få tilgang til Docker Hub. Ved å legge inn disse i din fork, vil workflowen bygge og pushe til din Docker Hub
+
+**1. Settings > Secrets and Variables > Actions**
+
+![3-bilde1](bilder/1-3.png)
+
+**2. "New repository secret"**
+
+![3-bilde2](bilder/2-3.png)
+
+Navnene må matche koden i docker.yml:
+
+**Brukernavn:** DOCKERHUB_USERNAME
+
+**Token/Passord:** DOCKERHUB_TOKEN
+
+**Repository:** DOCKERHUB_REPO
+
+## Tokens?
+
+I min docker.yml logger jeg inn på Docker Hub med "DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}".
+
+Tidligere (Oppgave 2) brukte jeg passordet til min Docker Hub, fremfor token, fordi en token blir veldig lang og vanskelig å skrive inn i "terraform apply" med "sensitive" aktivert (så man ikke ser hva man skriver). Og det er også noe som gjøres en gang, ikke noe automatisert som er lagret et sted.
+
+Fordelen med tokens er at du kan "trekke tilbake" tilgang når du vil, og velge scope
+
+**Hvordan du genererer en token:** hub.docker.com > My Account > Security > New Access Token
+
+![3-bilde3](bilder/3-3.png)
+
+**Lagre din token et trygt sted der ingen andre kan se den, og skriv inn i DOCKERHUB_TOKEN i secrets**
+
+![3-bilde4](bilder/4-3.png)
+
