@@ -24,7 +24,7 @@ jobs:
         run: docker build . -t nbx -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPO }}
 
   push:
-    runs-on: ubuntu/latest
+    runs-on: ubuntu-latest
     needs: build
     if: github.ref == "refs/heads/main"
 
