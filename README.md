@@ -39,13 +39,13 @@ En ulempe med at to personer må godkjenne er at arbeidsflyten vil bli tregere o
 
 Det står på Wiseflow at "Besvarelsen skal være anonymisert", så jeg gjorde det
 
-**1. Naviger til infra-directory & skriv "terraform init"**
+**1. Naviger til infra-directory & skriv ```terraform init```**
 
 
 ![2b-bilde1](bilder/1-2b.png)
 
 
-**2. Når Terraform er ferdig initialisert, skriv "terraform apply"**
+**2. Når Terraform er ferdig initialisert, skriv ```terraform apply```**
 
 
 ![2b-bilde2](bilder/2-2b.png)
@@ -57,7 +57,7 @@ Det står på Wiseflow at "Besvarelsen skal være anonymisert", så jeg gjorde d
 ![2b-bilde3](bilder/3-2b.png)
 
 
-**4. Godkjenn med "yes"**
+**4. Godkjenn med ```yes```**
 
 
 ![2b-bilde4](bilder/4-2b.png)
@@ -87,6 +87,14 @@ Det er fordi repoet allerede eksisterer på Docker hub. Her er hvordan man kan f
 ![2c-bilde3](bilder/3-2c.png)
 
 ## Oppgave 3
+
+**MAIN BRANCH**
+
+![3-bilde5](bilder/5-3.png)
+
+**TEST BRANCH**
+
+![3-bilde6](bilder/6-3.png)
 
 Workflowen Docker-CI / docker.yml bruker Repository Secrets for å få tilgang til Docker Hub. Ved å legge inn disse i din fork, vil workflowen bygge og pushe til din Docker Hub
 
