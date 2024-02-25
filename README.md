@@ -104,7 +104,7 @@ Navnene må matche koden i docker.yml:
 
 ## Tokens?
 
-I min docker.yml logger jeg inn på Docker Hub med "DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}".
+I min docker.yml logger jeg inn på Docker Hub med ```DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}```.
 
 Tidligere (Oppgave 2) brukte jeg passordet til min Docker Hub, fremfor token, fordi en token blir veldig lang og vanskelig å skrive inn i "terraform apply" med "sensitive" aktivert (så man ikke ser hva man skriver). Og det er også noe som gjøres en gang, ikke noe automatisert som er lagret et sted.
 
@@ -117,4 +117,27 @@ Fordelen med tokens er at du kan "trekke tilbake" tilgang når du vil, og velge 
 **Lagre din token et trygt sted der ingen andre kan se den, og skriv inn i DOCKERHUB_TOKEN i secrets**
 
 ![3-bilde4](bilder/4-3.png)
+
+## Kjør mitt container image
+
+Jeg antar at oppgaven da ikke skal være helt anonym, for mitt container image hentes fra min Docker Hub. Men jeg laget en spoiler i tilfelle jeg har misforstått noe:
+
+<details>
+  <summary>Instrukser</summary>
+
+  1. Først kjører du denne:
+     
+  ```docker pull l33mz/nbx:latest```
+
+  2. Så denne:
+     
+  ```docker run l33mz/nbx:latest```
+
+  Det skal returnere noe som dette:
+
+  ```
+  Highest BUY: 52142.24
+  Lowest SELL: 52542.62
+  ```
+</details>
 
