@@ -26,7 +26,7 @@ jobs:
   push:
     runs-on: ubuntu-latest
     needs: build
-    if: github.ref == "refs/heads/main"
+    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Docker Image Push Test
