@@ -30,7 +30,7 @@ jobs:
 
     steps:
       - name: Print Docker Images
-        run: docker images
+        run: docker images nbx
 
       - name: Docker Image Push Test
         run:
