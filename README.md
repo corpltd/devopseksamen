@@ -5,6 +5,10 @@
 
 # Blockchain Busters - Eksamen
 
+## Oppgave 1 - A
+
+![1a-Bilde 1](bilder/1-1a.png)
+
 ## Oppgave 1 - B
 **1. Først går jeg i repo-innstillinger > "Branches" > "Add branch protection rule"**
 
@@ -140,4 +144,3 @@ Jeg antar at oppgaven da ikke skal være helt anonym, for mitt container image h
   Lowest SELL: 52542.62
   ```
 </details>
-
